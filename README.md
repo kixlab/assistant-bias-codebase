@@ -49,7 +49,7 @@ Use the datasets needed for your chosen experiments:
 - [LMSYS-Chat-1M](https://huggingface.co/datasets/lmsys/lmsys-chat-1m): reflection dialogues. Accept the dataset agreement before downloading.
 - [WildChat-1M](https://huggingface.co/datasets/allenai/WildChat-1M): eight-turn conversations for disengagement prediction.
 - [SimulatorArena](https://github.com/microsoft/SimulatorArena): math-tutoring annotations and profiles.
-- MATH: obtain separately as described in [SimulatorArena's data instructions](https://github.com/microsoft/SimulatorArena/blob/main/data/README.md). Preparation automatically restores the required problem fields. An already restored `math_tutoring_annotations.json` file is also accepted.
+- MATH: obtain separately as described in [SimulatorArena's data instructions](https://github.com/microsoft/SimulatorArena/blob/main/data/README.md). Preparation automatically restores the required problem fields.
 
 Downloaded data stays under `data/`. Each sampling, method, or experiment folder writes generated files into its own `output/` directory. Scripts resolve default paths relative to the repository root.
 
