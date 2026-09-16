@@ -1,0 +1,19 @@
+Analyze why this conversation ended and assign EXACTLY ONE disengagement type code.
+
+Conversation (8 turns):
+{conversation}
+
+Codebook:
+- Normal Completion: The user's goal was fully addressed and the conversation ended naturally.
+- Forgetting: The model failed to incorporate prior context or instructions.
+- Technical Failure: The model failed to complete the requested task.
+- Misinterpretation: The model misunderstood the user's intent or request.
+- Expectation Mismatch: The model's behavior diverged from the user's expectations.
+- Unsolicited Action: The model performed actions beyond what was explicitly requested.
+- Refusal: The model declined or deflected a reasonable request.
+- Hallucination: The model produced factually incorrect or fabricated content.
+- Unknown: The conversation ended for reasons unrelated to model behavior.
+
+Use only evidence in the conversation. Set type_valid to true only when the chosen code is supported.
+Return JSON only:
+{{"disengagement_type": "one codebook name", "type_valid": true}}

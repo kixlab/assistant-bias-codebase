@@ -1,0 +1,6 @@
+Generate a request message for an assistant based on the task goal.
+
+Task goal:
+{task_goal}
+
+Write the request message only.

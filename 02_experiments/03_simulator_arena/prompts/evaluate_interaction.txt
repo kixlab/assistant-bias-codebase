@@ -1,0 +1,46 @@
+You are an expert in analyzing {task} conversation. Your task is to evaluate how similar a simulated user's interaction style is to a real user user's interaction style in their queries to an AI assistant.
+
+
+# Input
+## Document Type
+{document_type}
+
+## Document Goal
+{intent}
+
+## Conversation between Real User and AI Assistant
+{real_conversation}
+
+## Conversation between Simulated User and AI Assistant
+{simulated_conversation}
+
+# Analysis Features
+Compare the following **interaction style features** between the real user's queries and the simulated user's queries to guide your evaluation:
+
+
+{features}
+
+## **Similarity Rating Scale**
+Rate the overall interaction style similarity on a scale of 1-5:
+1: Simulated user's interaction style is completely different from real user's interaction style
+2: Simulated user's interaction style shows significant differences from real user's interaction style
+3: Simulated user's interaction style shows notable differences while maintaining some similarity
+4: Simulated user's interaction style is very similar to real user's with minor differences
+5: Simulated user's interaction style is nearly indistinguishable from real user's interaction style
+
+# Output Format
+## Feature Analysis:
+- Analyze each listed feature **individually**.
+- Compare **how the real user and the simulated user** differ or align for that feature.
+
+## Results (JSON):
+```json
+{{
+   "key_differences": ["list specific differences in interaction style here"],
+   "similarity_score": "1-5"
+}}
+```
+
+# Note
+- Focus only on user interaction style, not AI assistant's.
+- Your goal is to determine how closely the simulated user match real user in their interaction style.

@@ -1,0 +1,8 @@
+Read the full dialogue and infer only information that is supported by the user's messages.
+Describe what the user wanted in the dialogue in one sentence. Do not include information about the turns.
+
+Dialogue:
+{dialogue}
+
+Return exactly this JSON structure:
+{{"user_intent": "..."}}

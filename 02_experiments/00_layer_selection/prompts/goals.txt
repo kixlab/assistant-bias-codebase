@@ -1,0 +1,12 @@
+Generate {request_count} diverse task_goal items.
+
+task_goal:
+- A plain goal, need, or task to complete.
+- One sentence.
+
+Make the tasks diverse, covering various actions, domains, and scenarios.
+Make the tasks generalizable rather than tied to any specific individual.
+Keep each task_goal unique.
+
+Return JSON only with this shape:
+{{"goals": [{{"task_goal": "one sentence task goal"}}]}}

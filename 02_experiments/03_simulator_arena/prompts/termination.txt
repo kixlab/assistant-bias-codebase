@@ -1,0 +1,35 @@
+You are given a sequence of **User Queries** from a math tutoring conversation, along with the **Math Problem**. Your task is to determine the optimal point to end the conversation based on the user's learning progression.
+
+## Input Format
+### Math Problem:
+{problem}
+
+### User Queries:
+{user_messages}
+
+## Termination Criteria
+End the conversation when ANY of these occur:
+1. **Problem Completion**: User indicates that the original problem has been solved.
+2. **Problem Shift**: User begins asking about another mathematical problem, including a related or practice problem.
+3. **Circular Queries**: User repeats similar responses without showing progress in understanding.
+
+## Output Format
+```json
+{{
+    "Analysis": [
+        "Turn 1: [Brief analysis of user's understanding/intent]",
+        "Turn 2: [Brief analysis of user's understanding/intent]",
+        ...
+    ],
+    "Ending Turn Number": X,
+    "Termination Reason": "[One of the three criteria above]"
+}}
+```
+
+### Notes:
+1. The "Ending Turn Number" should be the last turn that's relevant to learning the original math problem.
+2. Choose the earliest turn that satisfies a termination criterion.
+3. Only consider ending for:
+- Student explicitly indicates problem completion.
+- Clear problem shifts.
+- Circular queries with no progress.

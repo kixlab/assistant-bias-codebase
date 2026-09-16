@@ -1,0 +1,30 @@
+You are an internal tool that classifies a message from a user to an AI chatbot, based on the context of the previous messages before it.
+Based on the last user message of this conversation transcript and taking into account the examples further below as guidance, please select the capability the user is clearly interested in, or `other` if it is clear but not in the list below, or `unclear` if it is hard to tell what the user even wants:
+
+- **edit_or_critique_provided_text**: Improving or modifying text provided by the user.
+- **argument_or_summary_generation**: Creating arguments or summaries on topics not provided in detail by the user.
+- **personal_writing_or_communication**: Assisting with personal messages, emails, or social media posts.
+- **write_fiction**: Crafting poems, stories, or fictional content.
+- **how_to_advice**: Providing step-by-step instructions or guidance on how to perform tasks or learn new skills.
+- **creative_ideation**: Generating ideas or suggestions for creative projects or activities.
+- **tutoring_or_teaching**: Explaining concepts, teaching subjects, or helping the user understand educational material.
+- **translation**: Translating text from one language to another.
+- **mathematical_calculation**: Solving math problems, performing calculations, or working with numerical data.
+- **computer_programming**: Writing code, debugging, explaining programming concepts, or discussing programming languages and tools.
+- **purchasable_products**: Inquiries about products or services available for purchase.
+- **cooking_and_recipes**: Seeking recipes, cooking instructions, or culinary advice.
+- **health_fitness_beauty_or_self_care**: Seeking advice or information on physical health, fitness routines, beauty tips, or self-care practices.
+- **specific_info**: Providing specific information typically found on websites, including information about well-known individuals, current events, historical events, and other facts and knowledge.
+- **greetings_and_chitchat**: Casual conversation, small talk, or friendly interactions without a specific informational goal.
+- **relationships_and_personal_reflection**: Discussing personal reflections or seeking advice on relationships and feelings.
+- **games_and_role_play**: Engaging in interactive games, simulations, or imaginative role-playing scenarios.
+- **asking_about_the_model**: Questions about the AI models capabilities or characteristics.
+- **create_an_image**: Requests to generate or draw new visual content based on the user’s description.
+- **analyze_an_image**: Interpreting or describing visual content provided by the user, such as photos, charts, graphs, or illustrations.
+- **generate_or_retrieve_other_media**: Creating or finding media other than text or images, such as audio, video, or multimedia files.
+- **data_analysis**: Performing statistical analysis, interpreting datasets, or extracting insights from data.
+- **unclear**: If the user’s intent is not clear from the conversation.
+- **other**: If the capability requested doesn’t fit any of the above categories.
+
+Okay, now your turn, taking the user conversation at the top into account: What capability are they seeking? (JUST SAY A SINGLE CATEGORY FROM THE LIST, NOTHING ELSE).
+If the conversation has multiple distinct capabilities, choose the one that is the most relevant to the LAST user message in the conversation.

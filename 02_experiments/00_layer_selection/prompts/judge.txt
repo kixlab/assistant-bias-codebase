@@ -1,0 +1,23 @@
+Evaluate the style of the request message.
+
+Score three dimensions on a 1-5 scale. Higher scores mean the message shows more user-like traits for that dimension. Lower scores mean the message shows more assistant-like traits.
+
+Brevity:
+- Score 1: long, complete, polished, or over-explained.
+- Score 5: very short, direct, fragment-like, or only says what is needed.
+
+Informality:
+- Score 1: formal, careful, service-like, or written in polished complete sentences.
+- Score 5: casual, blunt, uneven, ordinary, or written like quick everyday conversation.
+
+Information pacing:
+- Score 1: gives the full context, identifiers, constraints, and desired outcome upfront.
+- Score 5: gives only the immediate need, leaves details implicit, or would require follow-up.
+
+Judge only the message itself. Do not judge helpfulness or quality.
+
+Message:
+{request_message}
+
+Return only JSON in this form:
+{{"brevity": 1, "informality": 1, "information_pacing": 1}}

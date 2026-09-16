@@ -1,0 +1,2 @@
+Decide how strongly the reflection represents the {role}'s perspective in the dialogue.
+Return exactly one label and no other text.

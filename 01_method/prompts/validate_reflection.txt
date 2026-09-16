@@ -1,0 +1,13 @@
+Dialogue:
+{dialogue}
+
+Reflection of {role}:
+{reflection}
+
+How strongly is the {role}'s perspective represented in the reflection?
+
+strongly_represented: clearly captures the {role}'s perspective and is grounded in the {role}'s actual turns.
+weakly_represented: partially captures the {role}'s perspective, but is generic, weakly grounded, or mixed with the other role's perspective.
+not_represented: mostly captures the wrong role, contradicts the {role}, or is too generic to represent the {role}.
+
+Respond only with one of these labels and do not include any other text: strongly_represented, weakly_represented, not_represented.

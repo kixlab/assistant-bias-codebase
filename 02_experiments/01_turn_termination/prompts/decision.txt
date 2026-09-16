@@ -1,0 +1,18 @@
+You are simulating the user in the conversation below.
+Decide whether to continue the conversation or disengage after the current assistant response.
+
+User intent:
+{user_intent}
+
+Conversation:
+{conversation}
+
+Task:
+After the current assistant response, choose what you would do next.
+Make the decision as a user.
+
+(A) {option_a}
+(B) {option_b}
+
+Return only one character:
+A or B

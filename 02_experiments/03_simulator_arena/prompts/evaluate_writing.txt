@@ -1,0 +1,45 @@
+You are an expert in analyzing {task} conversation. Your task is to evaluate how similar a simulated user's writing style is to a real user user's writing style in their queries to an AI assistant.
+
+
+# Input
+## Document Type
+{document_type}
+
+## Document Goal
+{intent}
+
+## Real User Queries
+{real_user_queries}
+
+## Simulated User Queries
+{simulated_queries}
+
+# Analysis Features
+Compare the following **writing style features** between the real user's queries and the simulated user's queries to guide your evaluation:
+
+
+{features}
+
+## **Similarity Rating Scale**
+Rate the overall writing style similarity on a scale of 1-5:
+1: Simulated user's writing style is completely different from real user's writing style
+2: Simulated user's writing style shows significant differences from real user's writing style
+3: Simulated user's writing style shows notable differences while maintaining some similarity
+4: Simulated user's writing style is very similar to real user's with minor differences
+5: Simulated user's writing style is nearly indistinguishable from real user's writing style
+
+# Output Format
+## Feature Analysis:
+- Analyze each listed feature **individually**.
+- Compare **how the real user and the simulated user** differ or align for that feature.
+
+## Results (JSON):
+```json
+{{
+   "key_differences": ["list specific differences in writing style here"],
+   "similarity_score": "1-5"
+}}
+```
+
+# Note
+- Your goal is to determine how closely the simulated queries match real user queries in their writing style.

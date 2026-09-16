@@ -1,0 +1,9 @@
+{role_intro}
+
+Dialogue:
+{dialogue}
+
+Instruction:
+Write a brief reflection from the {role}'s perspective in one paragraph.
+
+Write exactly one paragraph.
