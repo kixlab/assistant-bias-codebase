@@ -63,7 +63,7 @@ uv run python 00_sampling/run.py label
 uv run python 00_sampling/run.py sample
 ```
 
-Defaults: filter 100,000 valid dialogues, then sample 30 dialogues for each of 24 topics. Labeling 100,000 dialogues requires 100,000 API calls. See [sampling](00_sampling/README.md).
+Defaults: filter 100,000 valid dialogues, then sample 30 dialogues for each of 24 topics. See [sampling](00_sampling/README.md).
 
 ## Step 2: Extract Role Vectors
 
