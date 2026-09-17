@@ -25,7 +25,7 @@ set +a
 
 The local model is **Qwen/Qwen3.5-9B**, loaded through TransformerLens with thinking disabled and deterministic decoding. API stages use `gpt-5-mini` by default and incur charges. Judge outputs can vary between trials; this variability is reported in the paper's appendix.
 
-## Put The Source Data Here
+## Dataset
 
 Keep the original dataset files and directory names.
 
